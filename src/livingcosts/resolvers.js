@@ -17,7 +17,7 @@ const resolvers = {
 	},
 	Mutation: {
 		createLivingcost: (_, { livingcost }) =>
-			generalRequest(`${URL}`, 'POST', livingcost),
+			generalRequest(`${URL}/`, 'POST', livingcost),
 		updateLivingcost: (_, { id, livingcost }) =>
 			generalRequest(`${URL}/${id}`, 'PUT', livingcost),
 		deleteLivingcost: (_, { id }) =>
