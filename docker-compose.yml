@@ -8,5 +8,8 @@ services:
       LIVINGCOSTS_URL: '192.168.99.101'
       LIVINGCOSTS_PORT: '4001'
       LIVINGCOSTS_ENTRY: 'livingcosts'
+      CRIMES_URL: '192.168.0.12'
+      CRIMES_PORT: '3001'
+      CRIMES_ENTRY: 'crimes'
     ports:
       - '5000:5000'
