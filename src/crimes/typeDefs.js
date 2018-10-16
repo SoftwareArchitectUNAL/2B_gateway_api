@@ -2,11 +2,11 @@ export const crimesTypeDef = `
 type Crime {
     _id: String!
     date: String!
-    state: Int!
+    state: String!
 }
-input CrimesInput {
+input CrimeInput {
     date: String!
-    state: Int!
+    state: String!
 }`;
 
 export const crimesQueries = `

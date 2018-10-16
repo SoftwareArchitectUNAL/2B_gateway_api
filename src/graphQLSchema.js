@@ -12,19 +12,30 @@ import {
 	livingcostsTypeDef
 } from './livingcosts/typeDefs';
 
+import {
+	crimesMutations,
+	crimesQueries,
+	crimesTypeDef
+} from './crimes/typeDefs';
+
+
 import livingcostsResolvers from './livingcosts/resolvers';
+
+
+import crimesResolvers from './crimes/resolvers';
+
 
 // merge the typeDefs
 const mergedTypeDefs = mergeSchemas(
 	[
 		'scalar JSON',
-		livingcostsTypeDef
+		livingcostsTypeDef, crimesTypeDef
 	],
 	[
-		livingcostsQueries
+		livingcostsQueries, crimesQueries
 	],
 	[
-		livingcostsMutations
+		livingcostsMutations, crimesMutations
 	]
 );
 
@@ -33,6 +44,6 @@ export default makeExecutableSchema({
 	typeDefs: mergedTypeDefs,
 	resolvers: merge(
 		{ JSON: GraphQLJSON }, // allows scalar JSON
-		livingcostsResolvers
+		livingcostsResolvers, crimesResolvers
 	)
 });
