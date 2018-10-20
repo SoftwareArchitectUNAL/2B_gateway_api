@@ -11,5 +11,8 @@ services:
       CRIMES_URL: '192.168.0.12'
       CRIMES_PORT: '3001'
       CRIMES_ENTRY: 'crimes'
+      VIOLENCE_URL: '192.168.99.102'
+      VIOLENCE_PORT: '9292'
+      VIOLENCE_ENTRY: 'violence'
     ports:
       - '5000:5000'
