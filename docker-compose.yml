@@ -14,5 +14,9 @@ services:
       VIOLENCE_URL: '35.196.108.151'
       VIOLENCE_PORT: '9292'
       VIOLENCE_ENTRY: 'violence'
+      ENTITIES_URL: '192.168.99.101'
+      ENTITIES_PORT: '8080'
+      ENTITIES_ENTRY: 'api/Entities'
+      
     ports:
       - '5000:5000'
