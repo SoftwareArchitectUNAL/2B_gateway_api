@@ -17,6 +17,7 @@ export async function generalRequest(url, method, body, fullResponse) {
 		json: true,
 		resolveWithFullResponse: fullResponse
 	};
+	console.log(" la peticion fue  : ",body);
 	if (process.env.SHOW_URLS) {
 		// eslint-disable-next-line
 		console.log(url);
@@ -25,6 +26,7 @@ export async function generalRequest(url, method, body, fullResponse) {
 	try {
 		return await request(parameters);
 	} catch (err) {
+
 		return err;
 	}
 }
