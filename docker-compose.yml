@@ -17,6 +17,9 @@ services:
       ENTITIES_URL: '35.196.108.151'
       ENTITIES_PORT: '8080'
       ENTITIES_ENTRY: 'api/Entities'
+      ANALYSIS_DATA_URL: '192.168.99.102'
+      ANALYSIS_DATA_PORT: '4000'
+      ANALYSIS_DATA_ENTRY: 'analysis_data/violence_events'
       
     ports:
       - '5000:5000'
