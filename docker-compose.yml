@@ -5,21 +5,21 @@ services:
     environment:
       PORT: '5000'
       SHOW_URLS: 'true'
-      LIVINGCOSTS_URL: '35.196.108.151'    
+      LIVINGCOSTS_URL: '35.231.198.209'
       LIVINGCOSTS_PORT: '4001'
       LIVINGCOSTS_ENTRY: 'livingcosts'
       CRIMES_URL: '192.168.0.12'
       CRIMES_PORT: '3001'
       CRIMES_ENTRY: 'crimes'
-      VIOLENCE_URL: '35.196.108.151'
+      VIOLENCE_URL: '35.231.198.209'
       VIOLENCE_PORT: '9292'
       VIOLENCE_ENTRY: 'violence'
-      ENTITIES_URL: '35.196.108.151'
+      ENTITIES_URL: '35.196.218.73'
       ENTITIES_PORT: '8080'
       ENTITIES_ENTRY: 'api/Entities'
-      ANALYSIS_DATA_URL: '192.168.99.102'
+      ANALYSIS_DATA_URL: '35.196.218.73'
       ANALYSIS_DATA_PORT: '4000'
       ANALYSIS_DATA_ENTRY: 'analysis_data/violence_events'
-      
+
     ports:
       - '5000:5000'
