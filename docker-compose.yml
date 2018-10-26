@@ -9,19 +9,19 @@ services:
       LIVINGCOSTS_PORT: '4001'
       LIVINGCOSTS_ENTRY: 'livingcosts'
 
-      VIOLENCE_URL: '34.219.108.161'
+      VIOLENCE_URL: '35.231.160.199'
       VIOLENCE_PORT: '9292'
       VIOLENCE_ENTRY: 'violence'
 
-      CRIMES_URL: '35.204.18.87'
+      CRIMES_URL: '35.231.194.73'
       CRIMES_PORT: '3001'
       CRIMES_ENTRY: 'crimes'
 
-      ENTITIES_URL: '35.237.81.177'
+      ENTITIES_URL: '35.231.194.73'
       ENTITIES_PORT: '8080'
       ENTITIES_ENTRY: 'api/Entities'
 
-      ANALYSIS_DATA_URL: '35.237.81.177'
+      ANALYSIS_DATA_URL: '35.231.194.73'
       ANALYSIS_DATA_PORT: '4000'
       ANALYSIS_DATA_ENTRY: 'analysis_data/violence_events'
 
