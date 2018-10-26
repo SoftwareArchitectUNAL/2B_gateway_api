@@ -12,7 +12,7 @@ type Crime {
    weapon_used: String
    mobility_agresor: String
    mobility_victim: String
-   age: Int
+   age: String
    gender: String
    marital_status: String
    country_origin:String
@@ -33,7 +33,7 @@ input CrimeInput {
   weapon_used: String
   mobility_agresor: String
   mobility_victim: String
-  age: Int
+  age: String
   gender: String
   marital_status: String
   country_origin:String
