@@ -2,25 +2,25 @@ export const violenceTypeDef = `
 
 type Murder {
     id: Int!
-    neighborhood: String!
+    locality: String!
     body_count: Int!
     description: String!
 }
 input MurderInput {
-    neighborhood: String!
+    locality: String!
     body_count: Int!
     description: String!
 }
 
 type Street {
     id: String!
-    neighborhood: String!
+    locality: String!
     stype: String!
     body_count: Int!
     description: String!
 }
 input StreetInput {
-    neighborhood: String!
+    locality: String!
     stype: String!
     body_count: Int!
     description: String!
@@ -28,13 +28,13 @@ input StreetInput {
 
 type Gender {
     id: String!
-    neighborhood: String!
+    locality: String!
     gtype: String!
     criminal_complaint: String!
     body_count: Int!
 }
 input GenderInput {
-    neighborhood: String!
+    locality: String!
     gtype: String!
     criminal_complaint: String!
     body_count: Int!
@@ -42,13 +42,13 @@ input GenderInput {
 
 type Intrafamily {
     id: String!
-    neighborhood: String!
+    locality: String!
     victim: String!
     aggressor: String!
     criminal_complaint: String!
 }
 input IntrafamilyInput {
-    neighborhood: String!
+    locality: String!
     victim: String!
     aggressor: String!
     criminal_complaint: String!
