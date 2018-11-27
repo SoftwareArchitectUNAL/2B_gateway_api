@@ -9,6 +9,16 @@ services:
       LIVINGCOSTS_PORT: '4001'
       LIVINGCOSTS_ENTRY: 'livingcosts'
 
+      USERS_URL: '192.168.99.101'
+      USERS_PORT: '3396'
+      USERS_ENTRY: 'user'
+
+      AUTH_URL: '192.168.99.101'
+      AUTH_PORT: '3396'
+      AUTH_ENTRY: 'ldap'
+
+
+
       VIOLENCE_URL: '35.231.160.199'
       VIOLENCE_PORT: '9292'
       VIOLENCE_ENTRY: 'violence'

@@ -13,6 +13,17 @@ import {
 } from './livingcosts/typeDefs';
 
 import {
+	usersMutations,
+	usersQueries,
+	usersTypeDef
+} from './users/typeDefs';
+
+import {
+		authMutations,
+		authTypeDef
+} from './auth/typeDefs';
+
+import {
 	crimesMutations,
 	crimesQueries,
 	crimesTypeDef
@@ -38,6 +49,8 @@ import {
 } from './analysisData/typeDefs';
 
 import livingcostsResolvers from './livingcosts/resolvers';
+import usersResolvers from './users/resolvers';
+import authResolvers from './auth/resolvers';
 
 import crimesResolvers from './crimes/resolvers';
 
@@ -50,13 +63,13 @@ import analysisDataResolvers from './analysisData/resolvers';
 const mergedTypeDefs = mergeSchemas(
 	[
 		'scalar JSON',
-		livingcostsTypeDef, crimesTypeDef, violenceTypeDef, entitiesTypeDef, analysisDataTypeDef,
+		livingcostsTypeDef, usersTypeDef, authTypeDef, crimesTypeDef, violenceTypeDef, entitiesTypeDef, analysisDataTypeDef,
 	],
 	[
-		livingcostsQueries, crimesQueries, violenceQueries, entitiesQueries, analysisDataQueries,
+		livingcostsQueries, usersQueries, crimesQueries, violenceQueries, entitiesQueries, analysisDataQueries,
 	],
 	[
-		livingcostsMutations, crimesMutations, violenceMutations, entitiesMutations, analysisDataMutations,
+		livingcostsMutations, usersMutations, authMutations, crimesMutations, violenceMutations, entitiesMutations, analysisDataMutations,
 	]
 );
 
@@ -65,6 +78,6 @@ export default makeExecutableSchema({
 	typeDefs: mergedTypeDefs,
 	resolvers: merge(
 		{ JSON: GraphQLJSON }, // allows scalar JSON
-		livingcostsResolvers, crimesResolvers, violenceResolvers, entitiesResolvers, analysisDataResolvers
+		livingcostsResolvers, usersResolvers, authResolvers, crimesResolvers, violenceResolvers, entitiesResolvers, analysisDataResolvers
 	)
 });
